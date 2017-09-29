@@ -34,7 +34,7 @@ class FacebookLoginModal extends React.Component {
       backgroundColor: '#fff',
       borderRadius: 5,
       maxWidth: 500,
-      minHeight: 300,
+      minHeight: 150,
       margin: '0 auto',
       padding: 30,
       zIndex: 10
@@ -44,9 +44,10 @@ class FacebookLoginModal extends React.Component {
       <div className="backdrop" style={backdropStyle}>
         <div className="modal" style={modalStyle}>
           {this.props.children}
-          <div className="footer">
-            <button onClick={this.login.bind(this)}>
-              Login with Facebook
+          <div>
+            <h1>Sign in</h1>
+            <button className="loginBtn loginBtn--facebook" onClick={this.login.bind(this)}>
+              Facebook
             </button>
           </div>
         </div>

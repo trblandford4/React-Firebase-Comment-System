@@ -4,7 +4,6 @@ import logo from '../images/perfect-sense-partner-logo.png';
 
 class Article extends Component {
     render() {
-
         const logoStyle = {
             height: '50px',
             width: '125px',
