@@ -22,3 +22,49 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+h1 {
+  letter-spacing: 5px;
+  font: 30px "Roboto", sans-serif;
+  color: #111;
+  text-align: center;
+}
+
+h3 {
+  letter-spacing: 5px;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #F8F8F8;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 1;
+  box-shadow: 0 8px 6px -6px #999;
+}
+
+.navbar img {
+  margin-left: 100px;
+}
+
+.content {
+  height: 100%;
+  margin: 0;
+  font: 400 18px/1.8 "Lato", sans-serif;
+  color: #777;
+  max-width: 1024px;
+  margin: auto;
+  text-align: left;
+}
+
+input[type=text] {
+  width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin-right: 30px;
+  margin-bottom: 50px;
+}

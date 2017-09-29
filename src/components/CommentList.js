@@ -3,6 +3,9 @@ import Comment from './Comment'
 
 var CommentList = React.createClass({
     render: function() {
+      const commentStyle = {
+        backgroundColor: 'gray'
+      }
       var commentNodes = this.props.data.map(function(comment) {
         return (
           <Comment author={comment.author} key={comment.id}>

@@ -7,7 +7,9 @@ import CommentList from './CommentList';
 class CommentBox extends Component {
     constructor(props) {
         super(props);
-        this.state = { comments: [] }; // <- set up react state
+        this.state = {
+            comments: []
+        }; // <- set up react state
     }
     componentWillMount(){
       /* Create reference to comments in Firebase Database */
@@ -24,7 +26,7 @@ class CommentBox extends Component {
             <div className="commentBox">
                 <h1>Comments</h1>
                 <CommentList data={this.state.comments} />
-                <CommentForm />
+                <CommentForm user={this.props.user} />
             </div>
         );
     }
